@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex1-2</title>
+  </head>
+  <body>
+    <h1>Posts</h1>
+    <div id="post-statistics"></div>
+    <div id="posts-container"></div>
+    <script src="post.js"></script>
+    <script src="postManager.js"></script>
+
+    <script type="module">
+      const postManager = new PostManager(
+        "https://jsonplaceholder.typicode.com/posts"
+      );
+      postManager.fetchPosts();
+    </script>
+  </body>
+</html>
